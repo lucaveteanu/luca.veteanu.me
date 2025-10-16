@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How I Built My First Game in JavaScript - Luca Veteanu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Luca Veteanu</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../volunteering.html">Volunteering</a></li>
+                <li><a href="../awards.html">Awards</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="blog-post">
+                <h1>How I Built My First Game in JavaScript</h1>
+                <div class="blog-post-meta">
+                    <span class="blog-category">Projects</span> | August 2024
+                </div>
+                <div class="blog-post-content">
+                    <p>
+                        Building Knight Adventure was one of the most challenging and rewarding projects I've ever undertaken. 
+                        It took months of work, countless bugs, and many late nights, but the end result was worth every 
+                        moment. Here's the story of how it all came together.
+                    </p>
+
+                    <h2>The Initial Concept</h2>
+                    <p>
+                        I wanted to create a turn-based RPG that would run entirely in a web browser. No downloads, no 
+                        installation - just open a webpage and play. The concept was simple: a knight battles monsters, 
+                        collects treasure, and grows stronger over time.
+                    </p>
+                    <p>
+                        I sketched out the core mechanics on paper: combat would be turn-based, there would be an inventory 
+                        system, enemies would get progressively harder, and players could upgrade their equipment. Simple 
+                        in theory, but implementing it would be another story.
+                    </p>
+
+                    <h2>Starting with the Basics</h2>
+                    <p>
+                        I began by learning HTML5 Canvas, which is how JavaScript draws graphics in a browser. My first 
+                        accomplishment was drawing a simple knight character - just a stick figure at first. Then I added 
+                        movement using keyboard controls. It was basic, but it worked.
+                    </p>
+                    <p>
+                        Next came the combat system. I created a simple battle interface where the player could choose to 
+                        attack or defend. The math was straightforward: damage dealt = attack power - defense. Critical 
+                        hits were random. Healing items restored health. One system at a time, the game began to take shape.
+                    </p>
+
+                    <h2>The Challenges</h2>
+                    <p>
+                        One of the biggest challenges was managing game state. How do I keep track of the player's health, 
+                        inventory, current level, and position all at once? I learned about JavaScript objects and used 
+                        them to store all the game data in one place.
+                    </p>
+                    <p>
+                        Another hurdle was collision detection. How does the game know when the player touches an enemy or 
+                        picks up treasure? After many failed attempts and internet searches, I finally got it working using 
+                        bounding box collision detection.
+                    </p>
+                    <p>
+                        The inventory system was particularly tricky. I wanted players to collect items, use potions, and 
+                        equip better weapons. This required creating multiple item types, each with different properties 
+                        and effects. Arrays and object-oriented programming became my best friends.
+                    </p>
+
+                    <h2>Art and Animation</h2>
+                    <p>
+                        I'm not an artist, so creating sprites was challenging. I started with pixel art, which is more 
+                        forgiving for beginners. Each character is just a grid of colored squares. The knight, monsters, 
+                        and items all started as simple geometric shapes, then I gradually added detail.
+                    </p>
+                    <p>
+                        Animation was another learning curve. I had to create sprite sheets and write code to cycle through 
+                        different frames. The knight's walking animation has four frames. The attack animation has three. 
+                        It doesn't sound like much, but making it smooth took hours of tweaking.
+                    </p>
+
+                    <h2>Testing and Refinement</h2>
+                    <p>
+                        Once I had a playable version, I asked friends to test it. Their feedback was invaluable. "The game 
+                        is too hard," they said. "I ran out of health potions." "Can you add a save feature?"
+                    </p>
+                    <p>
+                        I adjusted the difficulty, added more healing items throughout the game, and implemented local 
+                        storage to save progress. Each round of testing revealed new issues, and each fix made the game 
+                        better.
+                    </p>
+
+                    <h2>What I Learned</h2>
+                    <p>
+                        Building Knight Adventure taught me more than any tutorial ever could:
+                    </p>
+                    <ul>
+                        <li><strong>Break big problems into small ones:</strong> Don't try to build everything at once</li>
+                        <li><strong>Test early and often:</strong> Catch bugs when they're small and easy to fix</li>
+                        <li><strong>Don't be afraid to search:</strong> Every programmer looks up solutions online</li>
+                        <li><strong>Iterate and improve:</strong> Your first version won't be perfect, and that's okay</li>
+                        <li><strong>Persistence pays off:</strong> Stick with it, even when it's frustrating</li>
+                    </ul>
+
+                    <h2>The Reward</h2>
+                    <p>
+                        The best moment was when my younger cousin played Knight Adventure and genuinely enjoyed it. He 
+                        didn't know I made it at first, and when I told him, his eyes went wide. "You made this? Can you 
+                        teach me how?"
+                    </p>
+                    <p>
+                        That's when I realized: building the game wasn't just about learning to code. It was about creating 
+                        something that could inspire others. Now I use Knight Adventure in my teaching, showing students 
+                        that they too can create something amazing.
+                    </p>
+
+                    <h2>Your Turn</h2>
+                    <p>
+                        If you want to build your own game, start today. Don't wait until you're "ready" or until you've 
+                        learned everything. Start with something simple - maybe a ball bouncing around the screen, or a 
+                        character that can move when you press keys.
+                    </p>
+                    <p>
+                        Then add one feature at a time. Before you know it, you'll have built something incredible. And 
+                        who knows? Maybe your game will inspire the next generation of developers.
+                    </p>
+                </div>
+
+                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border-color);">
+                    <a href="../blog.html" class="btn btn-secondary">← Back to Blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luca Veteanu. All rights reserved.</p>
+            <p>Cooper City, Florida | <a href="mailto:hello@luca.veteanu.me">hello@luca.veteanu.me</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explaining Binary Numbers Using Light Bulbs - Luca Veteanu</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="../index.html">Luca Veteanu</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../projects.html">Projects</a></li>
+                <li><a href="../volunteering.html">Volunteering</a></li>
+                <li><a href="../awards.html">Awards</a></li>
+                <li><a href="../blog.html" class="active">Blog</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="blog-post">
+                <h1>Explaining Binary Numbers Using Light Bulbs</h1>
+                <div class="blog-post-meta">
+                    <span class="blog-category">Education</span> | April 2023
+                </div>
+                <div class="blog-post-content">
+                    <p>
+                        When I first started teaching coding, one of the most challenging concepts to explain was binary numbers. 
+                        How do computers think in 1s and 0s? Why can't they just use regular numbers like we do? These questions 
+                        kept coming up, and I needed a better way to explain it.
+                    </p>
+
+                    <h2>The Light Bulb Moment</h2>
+                    <p>
+                        One day, while preparing a lesson, I looked up at the classroom lights and had an idea. What if I used 
+                        light bulbs to teach binary? A light can be either ON or OFF - just like binary can be either 1 or 0. 
+                        This simple analogy transformed how my students understood binary.
+                    </p>
+
+                    <h2>How It Works</h2>
+                    <p>
+                        Imagine you have a row of light bulbs. Each bulb can be either on (1) or off (0). With just one bulb, 
+                        you can represent two states: off (0) or on (1).
+                    </p>
+                    <p>
+                        With two bulbs, you can represent four different combinations:
+                    </p>
+                    <ul>
+                        <li>Both off: 00 (zero)</li>
+                        <li>Right on, left off: 01 (one)</li>
+                        <li>Right off, left on: 10 (two)</li>
+                        <li>Both on: 11 (three)</li>
+                    </ul>
+
+                    <p>
+                        To better understand how binary numbers work, let's imagine a row of light bulbs. 
+                        Each light bulb can be either on or off, which we can represent using a 0 or a 1. 
+                        So, a row of light bulbs that is turned off would be represented by a string of 0s, like this:
+                    </p>
+
+                    <div class="blog-image">
+                        <img src="../assets/images/bulbs1.png">
+                    </div>
+
+                    <p>
+                    And a row of light bulbs that is turned on would be represented by a string of 1s, like this:
+                    </p>
+
+                    <div class="blog-image">
+                        <img src="../assets/images/bulbs2.png">
+                    </div>
+
+                    <p>
+                        We can use these light bulbs to represent any number we want. For example, the number 3 could be represented like this:
+                    </p>
+
+                    <div class="blog-image">
+                        <img src="../assets/images/bulbs3.png">
+                    </div>
+
+                    <p>
+                    In this case, the first three light bulbs are turned off, and the last two are turned on. 
+                    We can read this binary number just like we would read any other number, from right to left. 
+                    The rightmost light bulb represents the number 1, the next light bulb represents the number 2, the next represents the number 4, and so on.
+                    </p>
+
+                    <p>
+                    So in the above case, 00011 in binary is equal to 2 + 1 = 3 in decimal.
+                    </p>
+
+                    
+                    <h2>The Power Doubles</h2>
+                    <p>
+                        Here's where it gets interesting. Each time you add a bulb, you double the number of combinations you 
+                        can make. Three bulbs give you 8 combinations (2³), four bulbs give you 16 (2⁴), and so on. With just 
+                        eight light bulbs, you can count from 0 to 255!
+                    </p>
+
+                    <h2>Why Computers Use Binary</h2>
+                    <p>
+                        Computers use binary because they're built with billions of tiny switches (transistors) that, like our 
+                        light bulbs, can only be in two states: on or off. By combining these switches in clever ways, computers 
+                        can represent any number, any letter, any image, or any piece of information.
+                    </p>
+
+                    <h2>Try It Yourself</h2>
+                    <p>
+                        Here's a challenge: Using three light bulbs (or three fingers held up or down), try to represent the 
+                        number 5. Remember, the rightmost position is worth 1, the middle is worth 2, and the leftmost is 
+                        worth 4. Did you get 101? That's right - 4 + 0 + 1 = 5!
+                    </p>
+
+                    <p>
+                        Understanding binary is fundamental to understanding how computers work at their core. And with the 
+                        light bulb analogy, it's a concept that anyone can grasp, regardless of their background in math or 
+                        computer science.
+                    </p>
+                </div>
+
+                <div style="margin-top: 3rem; padding-top: 2rem; border-top: 2px solid var(--border-color);">
+                    <a href="../blog.html" class="btn btn-secondary">← Back to Blog</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Luca Veteanu. All rights reserved.</p>
+            <p>Cooper City, Florida | <a href="mailto:hello@luca.veteanu.me">hello@luca.veteanu.me</a></p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
